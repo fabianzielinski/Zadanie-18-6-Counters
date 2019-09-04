@@ -7,16 +7,16 @@ var Counter = React.createClass({
     },
 
     componentDidMount: function () {
-        console.log('Daje dostęp do DOM');
+        console.log('Zamieszczono licznik nr', number, '\n (wyslano zapytanie do serwera...).');
     },
     shouldComponentUpdate: function() {
         console.log('true');
     },
     componentDidUpdate: function () {
-        console.log('Możemy pobrać dane');
+        console.log('Zaktualizowano komponent.');
     },
     componentWillUnmount: function () {
-        console.log('Koniec życia komponentu');
+        console.log('Koniec życia komponentu.');
     },
     increment: function () {
         this.setState({
